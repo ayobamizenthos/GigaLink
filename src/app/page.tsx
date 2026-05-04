@@ -57,7 +57,7 @@ const TalentCarousel = () => {
     {
       name: 'Ayobami Rufai',
       role: 'Software Developer',
-      img: '/zenthos.png',
+      img: '/Zenthos.png',
       verified: true,
       school: 'ZenthosLab',
     },
