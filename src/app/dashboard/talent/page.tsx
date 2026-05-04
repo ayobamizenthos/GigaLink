@@ -620,8 +620,10 @@ export default function TalentDashboard() {
                     <div className="w-20 h-20 rounded-2xl overflow-hidden border-2 border-white shadow-xl bg-gray-50">
                       <img src="/adaobi_headshot.png" alt="Adaobi" className="w-full h-full object-cover" />
                     </div>
-                    <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-[#09090B] rounded-full flex items-center justify-center border-2 border-white shadow-lg">
-                      <CheckCircle2 className="w-3 h-3 text-white" />
+                    {/* Twitter-style Verified Badge */}
+                    <div className="absolute -bottom-1 -right-1 w-6 h-6 flex items-center justify-center">
+                      <div className="absolute inset-0 bg-[#0055FF] scale-110" style={{ clipPath: "polygon(50% 0%, 61% 10%, 75% 5%, 79% 19%, 93% 20%, 90% 34%, 100% 45%, 93% 58%, 95% 72%, 82% 78%, 78% 92%, 64% 91%, 53% 100%, 39% 91%, 25% 92%, 21% 78%, 7% 75%, 10% 61%, 0% 50%, 10% 39%, 5% 25%, 18% 21%, 22% 7%, 36% 10%)" }}></div>
+                      <CheckCircle2 className="w-3.5 h-3.5 text-white relative z-10" />
                     </div>
                   </div>
                   <div>
@@ -637,7 +639,7 @@ export default function TalentDashboard() {
                   </div>
                   <div className="p-4 bg-gray-50 rounded-2xl border border-gray-100">
                     <p className="text-[9px] font-black text-gray-400 uppercase tracking-widest mb-1">Program Excellence</p>
-                    <p className="text-sm font-bold text-[#09090B]">Frontend Engineering & Systems</p>
+                    <p className="text-sm font-bold text-[#09090B]">Frontend Engineering</p>
                   </div>
                 </div>
 
