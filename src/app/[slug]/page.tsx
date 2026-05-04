@@ -43,7 +43,7 @@ export default async function PublicProfile({ params }: { params: { slug: string
               <div className="w-32 h-32 rounded-[40px] bg-gray-100 border-4 border-white shadow-xl overflow-hidden">
                 <img 
                   src={isAdaobi ? "/adaobi_headshot.png" : "https://avatar.vercel.sh/" + slug} 
-                  alt={displayData.user.name} 
+                  alt={displayData.user.name ?? ""} 
                   className="w-full h-full object-cover object-top"
                 />
               </div>
@@ -56,7 +56,7 @@ export default async function PublicProfile({ params }: { params: { slug: string
 
             <div className="flex-1 space-y-4">
               <div>
-                <h1 className="text-4xl font-black tracking-tighter uppercase mb-1">{displayData.user.name}</h1>
+                <h1 className="text-4xl font-black tracking-tighter uppercase mb-1">{displayData.user.name ?? ""}</h1>
                 <div className="flex flex-wrap items-center gap-4 text-sm font-bold text-gray-400 uppercase tracking-widest">
                   <span className="flex items-center gap-1.5 text-[#09090B]">
                     <Briefcase className="w-4 h-4" /> {displayData.selectedRole}
@@ -116,7 +116,7 @@ export default async function PublicProfile({ params }: { params: { slug: string
           <div className="space-y-6">
             <div className="bg-[#09090B] text-white rounded-[32px] p-8 shadow-xl text-center space-y-6">
               <div className="space-y-2">
-                <h3 className="text-lg font-black uppercase tracking-tight">Hire {displayData.user.name.split(' ')[0]}</h3>
+                <h3 className="text-lg font-black uppercase tracking-tight">Hire {(displayData.user.name ?? "").split(' ')[0]}</h3>
                 <p className="text-xs text-gray-400 font-medium">Request an interview or view professional portfolio.</p>
               </div>
               <button className="w-full bg-white text-[#09090B] py-4 rounded-2xl text-xs font-black uppercase tracking-widest hover:bg-gray-100 transition-all active:scale-95">
