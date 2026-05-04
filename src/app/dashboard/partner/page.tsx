@@ -146,11 +146,11 @@ export default function PartnerDashboard() {
             <span className="absolute top-0 right-0.5 w-2.5 h-2.5 rounded-full bg-red-500 border-[1.5px] border-white" />
           </button>
           <div className="flex items-center gap-4 pl-6 border-l border-gray-200 cursor-pointer group">
-            <div className="w-9 h-9 rounded-xl overflow-hidden border-2 border-gray-100 group-hover:border-[#0055FF] transition-colors bg-white flex items-center justify-center p-1">
+            <div className="w-10 h-10 flex items-center justify-center">
               <img
-                src="https://www.google.com/s2/favicons?domain=altschoolafrica.com&sz=128"
+                src="/altschool_logo.png"
                 alt="AltSchool"
-                className="w-full h-full object-cover rounded-md"
+                className="w-full h-full object-contain"
               />
             </div>
             <span className="text-sm font-bold text-[#09090B] hidden sm:block group-hover:text-[#09090B] transition-colors">
@@ -169,11 +169,11 @@ export default function PartnerDashboard() {
         >
           <div className="flex items-center gap-5">
             <div className="relative group">
-              <div className="w-16 h-16 rounded-2xl border-2 border-white shadow-xl overflow-hidden bg-white group-hover:border-[#0055FF] transition-all duration-300 transform group-hover:scale-105 flex items-center justify-center p-2">
+              <div className="w-16 h-16 flex items-center justify-center">
                 <img
-                  src="https://www.google.com/s2/favicons?domain=altschoolafrica.com&sz=128"
+                  src="/altschool_logo.png"
                   alt="AltSchool"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <div className="absolute -bottom-1 -right-1 w-7 h-7 flex items-center justify-center drop-shadow-xl z-20">

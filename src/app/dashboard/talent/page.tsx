@@ -610,9 +610,7 @@ export default function TalentDashboard() {
                     <ShieldCheck className="w-4 h-4" />
                     <span className="text-[10px] font-black uppercase tracking-[0.2em]">Institutional Recommendation</span>
                   </div>
-                  <div className="w-12 h-12 rounded-xl border border-gray-100 flex items-center justify-center p-2 bg-white shadow-sm">
-                    <img src="/altschool_logo.png" alt="AltSchool" className="w-full h-full object-contain" />
-                  </div>
+                  <img src="/altschool_logo.png" alt="AltSchool" className="w-12 h-12 object-contain" />
                 </div>
 
                 <div className="flex items-center gap-5 mb-10">
