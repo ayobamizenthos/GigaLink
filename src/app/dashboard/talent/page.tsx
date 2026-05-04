@@ -606,7 +606,7 @@ export default function TalentDashboard() {
             >
               <div className="p-8">
                 <div className="flex justify-between items-start mb-8">
-                  <div className="flex items-center gap-2 text-[#0055FF]">
+                  <div className="flex items-center gap-2 text-[#09090B]">
                     <ShieldCheck className="w-4 h-4" />
                     <span className="text-[10px] font-black uppercase tracking-[0.2em]">Institutional Recommendation</span>
                   </div>
@@ -620,13 +620,13 @@ export default function TalentDashboard() {
                     <div className="w-20 h-20 rounded-2xl overflow-hidden border-2 border-white shadow-xl bg-gray-50">
                       <img src="/adaobi_headshot.png" alt="Adaobi" className="w-full h-full object-cover" />
                     </div>
-                    <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-[#0055FF] rounded-full flex items-center justify-center border-2 border-white shadow-lg">
+                    <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-[#09090B] rounded-full flex items-center justify-center border-2 border-white shadow-lg">
                       <CheckCircle2 className="w-3 h-3 text-white" />
                     </div>
                   </div>
                   <div>
                     <h3 className="text-2xl font-black text-[#09090B] tracking-tighter leading-none mb-1">ADAOBI EZE</h3>
-                    <p className="text-[10px] font-black text-[#0055FF] uppercase tracking-widest">{displayRole}</p>
+                    <p className="text-[10px] font-black text-[#09090B] uppercase tracking-widest">{displayRole}</p>
                   </div>
                 </div>
 
@@ -637,7 +637,7 @@ export default function TalentDashboard() {
                   </div>
                   <div className="p-4 bg-gray-50 rounded-2xl border border-gray-100">
                     <p className="text-[9px] font-black text-gray-400 uppercase tracking-widest mb-1">Program Excellence</p>
-                    <p className="text-sm font-bold text-[#09090B]">Fullstack Development & Systems</p>
+                    <p className="text-sm font-bold text-[#09090B]">Frontend Engineering & Systems</p>
                   </div>
                 </div>
 
