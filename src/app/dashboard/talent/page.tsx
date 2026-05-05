@@ -32,7 +32,7 @@ export default function TalentDashboard() {
     const fetchProfile = async () => {
       try {
         const res = await fetch('/api/user/profile')
-        if (res.status === 401) return; // Skip if unauthorized
+        if (res.status === 401) return;
         const data = await res.json()
         if (data.profile) {
           setUserData(data)
@@ -73,7 +73,7 @@ export default function TalentDashboard() {
   // Use real data or fallback to Adaobi for presentation consistency
   let displayName = userData?.user?.name || 'Adaobi Eze'
   if (displayName === 'null null') displayName = 'Adaobi Eze'
-  
+
   const displayRole = userData?.profile?.selectedRole || 'Frontend Engineer'
   const displayTrainer = userData?.profile?.trainer || 'AltSchool Africa'
   const displayLocation = userData?.profile?.location || 'Lagos, Nigeria'
@@ -84,7 +84,7 @@ export default function TalentDashboard() {
     { value: '12', label: 'Active applications', color: 'text-[#09090B]' },
     { value: '3', label: 'Interviews', color: 'text-[#0055FF]' },
   ]
-  
+
   // ... rest of the code ...
   const jobMatches = [
     {
@@ -384,11 +384,10 @@ export default function TalentDashboard() {
               {['All Matches', 'Remote', 'Enterprise', 'Startups'].map((tab, i) => (
                 <button
                   key={tab}
-                  className={`px-4 py-1.5 text-xs font-bold rounded-full whitespace-nowrap transition-all ${
-                    i === 0
+                  className={`px-4 py-1.5 text-xs font-bold rounded-full whitespace-nowrap transition-all ${i === 0
                       ? 'bg-[#09090B] text-white shadow-md'
                       : 'bg-white text-gray-500 hover:text-[#09090B] border border-gray-200 hover:border-gray-300 shadow-sm'
-                  }`}
+                    }`}
                 >
                   {tab}
                 </button>
@@ -421,13 +420,12 @@ export default function TalentDashboard() {
                         </div>
                         <div className="flex items-center gap-2">
                           <span
-                            className={`text-[9px] font-black px-2.5 py-0.5 rounded-full uppercase tracking-wider border shadow-sm ${
-                              item.status === 'New match'
+                            className={`text-[9px] font-black px-2.5 py-0.5 rounded-full uppercase tracking-wider border shadow-sm ${item.status === 'New match'
                                 ? 'bg-blue-50 text-[#0055FF] border-blue-100'
                                 : item.status === 'High match'
                                   ? 'bg-emerald-50 text-emerald-600 border-emerald-100'
                                   : 'bg-gray-50 text-gray-500 border-gray-100'
-                            }`}
+                              }`}
                           >
                             {item.status}
                           </span>
@@ -641,7 +639,7 @@ export default function TalentDashboard() {
                   </div>
                 </div>
 
-                <button 
+                <button
                   onClick={() => setIsModalOpen(false)}
                   className="w-full bg-[#09090B] text-white py-4 rounded-2xl text-xs font-black uppercase tracking-widest hover:bg-black transition-all shadow-xl active:scale-[0.98]"
                 >
