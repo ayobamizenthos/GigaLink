@@ -172,29 +172,13 @@ const PopularServices = () => {
   const [activeIndex, setActiveIndex] = useState(0)
 
   const services = [
-    { title: 'Virtual Assistant', img: '/mobile_app_skill.png' },
-    { title: 'Digital Marketer', img: '/ui_ux_skill.png' },
-    { title: 'AI Trainer', img: '/data_science_skill.png' },
-    { title: 'Data Analyst', img: '/frontend_skill.png' },
+    { title: 'Mobile App Development', img: '/mobile_app_skill.png' },
+    { title: 'UI/UX Design', img: '/ui_ux_skill.png' },
+    { title: 'AI & Data Science', img: '/data_science_skill.png' },
+    { title: 'Web Development', img: '/frontend_skill.png' },
     {
-      title: 'Product Management',
-      img: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=800&auto=format&fit=crop',
-    },
-    {
-      title: 'Social Media Marketing',
+      title: 'Digital Marketing',
       img: 'https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=800&auto=format&fit=crop',
-    },
-    {
-      title: 'Project Management',
-      img: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&auto=format&fit=crop',
-    },
-    {
-      title: 'Data Analysis',
-      img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop',
-    },
-    {
-      title: 'Content Writing',
-      img: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&auto=format&fit=crop',
     },
     {
       title: 'Video Editing',
